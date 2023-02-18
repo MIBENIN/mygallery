@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --lightgray:#E5E5E5;
+    --white:#ffffff;
+    --gray:#A9A9A9;
+    --darkgray:#4E5150;
+    --slighlylightgray:#B9BDCF;
+    --fw-700:700;
+    --fw-600:600;
+
+}
+
+.container{
+    width:95%;
+    margin:0 auto;
+    padding:3em 0 0;
+}
+img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius:1em ;
+}
+.profile{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1em;
+    margin-bottom: 4em;
+}
+
+.profile-image{
+    width:8.847rem;
+    height:8.847rem;
+}
+.profile-name,.profile-stats-number{
+    color:var(--darkgray);
+    font-size:1.1rem;
+}
+.profile-place,.profile-stats-name{
+    color:var(--gray);
+    font-size:.7rem;
+}
+.profile-stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2em;
+}
+.profile-stats-card{
+    background-color: var(--lightgray);
+    width:5rem;
+    padding:.5em;
+    border-radius: .5em;
+    text-align: center;
+}
+
+.image-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:.7em;
+    padding-bottom: 3em;
+
+}
+.grid-image2{
+    grid-column: 2/4;
+    grid-row:1/2;
+}
+.grid-image3{
+    grid-column: 1/3;
+    grid-row:2/3;
+}
+.grid-image4{
+    grid-column: 3/4;
+    grid-row:2/4;
+}
+.grid-image5{
+    grid-column: 1/2;
+    grid-row:3/4;
+}
+.grid-image6{
+    grid-column: 2/3;
+    grid-row:3/4;
+}
+
+.author-details{
+    text-align: center;
+    color:var(--slighlylightgray);
+    padding:2em 0;
+
+}
+@media screen and (min-width:850px) {
+    .container{
+        width:80%;
+        max-width: 1052px;
+    }
+    .profile-name,.profile-stats-number{
+        font-size: 1.5rem;
+    }
+    .profile-place,.profile-stats-name{
+        font-size:1rem;
+    }
+    .profile-stats-card{
+        width: 7rem;
+        border-radius: .7em;
+    }
+    .image-grid{
+        gap:1.1em;
+    }
+}
